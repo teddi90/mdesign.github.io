@@ -1,12 +1,20 @@
 jQuery(document).ready(function($) {
-	$(".hamburger").on("click", function(){
-	    $(this).toggleClass("hamburger__active");
-	    $(".menu").toggleClass("menu__active");  
-    });
+	$('.js-show-mobile').click(function(){
+		$(this).toggleClass('is-active');
+		$('.b-mobile-nav').addClass('is-active');
+	});
+
+	$(document).click( function(event){
+		if( $(event.target).closest(".b-mobile-nav__inner, .js-show-mobile").length)
+			return;
+		$('.b-mobile-nav').removeClass('is-active');
+		$('.b-hamburger').removeClass('is-active');
+		event.stopPropagation();
+	});
 
 	var wrap = $('.navigation');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1315) {
+		if ($(this).scrollTop() > 1439) {
 		      wrap.addClass('navigation__fixed');
 		    } else {
 		      wrap.removeClass('navigation__fixed');
@@ -15,33 +23,27 @@ jQuery(document).ready(function($) {
 
 	var phone = $('.btn-phone');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1315) {
-		      phone.addClass('btn-phone__fixed');
+		if ($(this).scrollTop() > 1439) {
+		      phone.slideDown().addClass('btn-phone__fixed');
 		    } else {
-		      phone.removeClass('btn-phone__fixed');
+		      phone.slideUp().removeClass('btn-phone__fixed');
 		    }
 	});
 
 	var arrow = $('.btn-up');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1315) {
-		      arrow.addClass('btn-up__fixed');
+		if ($(this).scrollTop() > 1439) {
+		      arrow.slideDown().addClass('btn-up__fixed');
 		    } else {
-		      arrow.removeClass('btn-up__fixed');
+		      arrow.slideUp().removeClass('btn-up__fixed');
 		    }
 	});
 
 	$('.serv-info').on('click', function(event) {
 	  var parentItem = $(this).parent();
 	  parentItem.find('.serv-info__hidden').stop().slideToggle();
-	  // parentItem.find('.btn-services:after').css({"content","МЕНШЕ"});
 	 });
-
-    $(".menu").on("click","a", function () {
-	   $(".hamburger").removeClass("hamburger__active");
-	   $(".menu").removeClass("menu__active");  
-    });	
-
+	
     $(".menu, .scroll").on("click","a", function (event) {
 
         //отменяем стандартную обработку нажатия по ссылке
@@ -56,13 +58,40 @@ jQuery(document).ready(function($) {
             top = $(id).offset().top;
 
         //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').stop().animate({scrollTop: top}, 1500);
 	});
 
-	$(".btn-more").on("click", function(){
-		event.preventDefault();
-	    $('.hidden').toggleClass("show");
-    });
+	$(".menu-item").on("click","a", function (event) {
+
+        //отменяем стандартную обработку нажатия по ссылке
+
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+
+            top = $(id).offset().top -52;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').stop().animate({scrollTop: top}, 1500);
+	});
+
+	 $('.btn-more').on('click', function(event) {
+		 event.preventDefault();
+		 var innerBText = $(this).text(); // Внутрішній текст кнопки
+
+		 if (innerBText == 'Показати більше робіт') {
+		  $(this).text('Приховати роботи');
+		  // Тут можна поставити slideDown();
+		  $('.hidden').slideDown().toggleClass("show");
+		 } else {
+		  $(this).text('Показати більше робіт');
+		  // Тут slideUp();
+		  $('.hidden').slideUp().removeClass("show");
+		 }
+	});
 
 	$('#slider').slick({
 	  dots: true,
@@ -70,9 +99,11 @@ jQuery(document).ready(function($) {
 	  autoplay: true,
 	  autoplaySpeed: 4000,
 	  pauseOnHover:false,
-	  arrows:false,
+	  arrows:true,
 	  fade: true,
-	  cssEase: 'linear'
+	  cssEase: 'linear',
+	  nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i><div>',
+  	  prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i><div>'
 	});
 
 	$('.slider-what__work').slick({

@@ -26,27 +26,61 @@
         <li><a href="#portfolio">портфоліо</a></li>
         <li><a href="#services">послуги</a></li>
         <li><a href="#how-work">як ми працюємо</a></li>
-        <li><a href="#contact">контакти			</a></li>
+        <li><a href="#contact">контакти</a></li>
       </ul>
     </nav>
-    <header id="home">
-      <div class="container">
-        <div class="header__logo"><a href="#"><img src="images/logo.png" alt="MDesign"/></a></div>
-        <div class="header__slogan">
-          <h3>Перетворимо Ваші мрії 	</h3>
-          <h4>в простір для життя		</h4>
+    <div class="b-mobile-nav">
+      <div class="b-mobile-nav__inner">
+        <div class="b-mobile-nav__item">
+          <ul class="mobile-menu" id="menu-holovne-meniu-1">
+            <li class="menu-item"><a href="#about">про нас</a></li>
+            <li class="menu-item"><a href="#portfolio">портфоліо</a></li>
+            <li class="menu-item"><a href="#services">послуги</a></li>
+            <li class="menu-item"><a href="#what-work">що ми робимо</a></li>
+            <li class="menu-item"><a href="#how-work">як ми працюємо</a></li>
+            <li class="menu-item"><a href="#contact">контакти 	</a></li>
+          </ul>
         </div>
-        <div class="header__phone"><a href="tel:+380987777777">+380987777777</a><a href="tel:+380987777777">+380987777777</a><a class="btn-order" href="#" data-toggle="modal" data-target="#orderCall">Замовити дзвінок</a></div>
-        <div id="slider">
-          <div class="slider__content bg1"></div>
-          <div class="slider__content bg2"></div>
-          <div class="slider__content bg3"></div>
+        <div class="b-mobile-nav__item">
+          <ul class="mobile-menu">
+            <li class="menu-item"><a href="tel:+380987777777">+380987777777</a></li>
+            <li class="menu-item"><a href="tel:+380987777777">+380987777777	</a></li>
+          </ul>
+        </div>
+        <div class="b-mobile-nav__item"><a class="btn-order" href="#" data-toggle="modal" data-target="#orderCall">Замовити дзвінок						</a></div>
+      </div>
+    </div>
+    <header id="home">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-9 col-lg-7">
+              <div class="header__logo scroll"><a href="#home"><img src="images/logo.png" alt="MDesign"/></a></div>
+              <div class="header__slogan d-none d-md-block">
+                <h3>Перетворимо Ваші мрії<br/> в простір для життя		</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 d-none d-lg-block">
+              <div class="header__order"><a class="btn-order" href="#" data-toggle="modal" data-target="#orderCall">Замовити дзвінок</a></div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2 d-none d-lg-block">
+              <div class="header__phone"><a href="tel:+380987777777">+380987777777</a><a href="tel:+380987777777">+380987777777</a></div>
+            </div>
+          </div>
+          <div class="hamburger d-lg-none"><span class="trigger-holder js-show-mobile"><span class="menu-trigger"></span></span></div>
         </div>
       </div>
-      <div class="header__social">
-        <div class="social__box"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
-        <div class="social__box"><a href="#"><i class="fab fa-instagram"></i></a></div>
-        <div class="social__box"><a href="#"><i class="fab fa-telegram-plane"></i></a></div>
+      <div class="header">
+        <div id="slider">
+          <div class="slider__content"><img src="images/design1.jpg" alt=""/></div>
+          <div class="slider__content"><img src="images/design2.jpg" alt=""/></div>
+          <div class="slider__content"><img src="images/design3.jpg" alt=""/></div>
+        </div>
+        <div class="header__social">
+          <div class="social__box"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+          <div class="social__box"><a href="#"><i class="fab fa-instagram"></i></a></div>
+          <div class="social__box"><a href="#"><i class="fab fa-telegram-plane"></i></a></div>
+        </div>
       </div>
     </header>
     <div class="btn-phone"><a href="#" data-toggle="modal" data-target="#orderCall"><i class="fas fa-phone"></i></a></div>
@@ -159,7 +193,7 @@
                   <p>2-ох кімнатниої квартири м.Івано-франківськ</p>
                 </figcaption>
               </figure></a></div>
-          <div class="col-12 ta-c"><a class="btn btn-more" href="#">переглянути всі</a></div>
+          <div class="col-12 ta-c"><a class="btn btn-more" href="#">Показати більше робіт</a></div>
         </div>
       </div>
     </section>
@@ -174,7 +208,7 @@
               <figure><img class="img-fluid" src="images/design5.jpg" alt=""/>
                 <figcaption>
                   <h3>Пакет STANDART</h3>
-                  <p>від 7$/m2</p>
+                  <p>від 7$/м2</p>
                   <div class="serv-info__hidden">
                     <h4>Складові послуги</h4>
                     <ul>
@@ -195,7 +229,7 @@
               <figure><img class="img-fluid" src="images/design5.jpg" alt=""/>
                 <figcaption>
                   <h3>Пакет STANDART+ </h3>
-                  <p>від 11$/m2</p>
+                  <p>від 11$/м2</p>
                   <div class="serv-info__hidden">
                     <h4>Складові послуги</h4>
                     <ul>
