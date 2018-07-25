@@ -24,7 +24,21 @@ jQuery(document).ready(function($) {
 		      wrap.removeClass('navigation__fixed');
 		    }
 	});
-	
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
 	var phone = $('.btn-phone');
 	$(window).on('scroll', function(e) {
 		if ($(this).scrollTop() > 1439) {
@@ -97,29 +111,7 @@ jQuery(document).ready(function($) {
 		 }
 	});
 
-	$('#slider').slick({
-	  dots: true,
-	  infinite: true,
-	  autoplay: true,
-	  autoplaySpeed: 4000,
-	  pauseOnHover:false,
-	  arrows:true,
-	  fade: true,
-	  cssEase: 'linear',
-	  nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i><div>',
-  	  prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i><div>'
-	});
-
-	$('.slider-what__work').slick({
-	  dots: false,
-	  infinite: true,
-	  autoplay: false,
-	  arrows:true,
-	  fade: true,
-	   cssEase: 'linear',
-	  nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i><div>',
-  	  prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i><div>'
-	});
+	
 }) 
 
 
