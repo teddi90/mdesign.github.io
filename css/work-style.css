@@ -137,7 +137,16 @@ ul {
   padding: 50px 15px;
   background-color: #fff;
   transform: translateX(-300px);
-  transition: .3s; }
+  transition: .3s;
+  position: relative; }
+
+.b-mobile-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer; }
+  .b-mobile-close i {
+    font-size: 25px; }
 
 .b-mobile-nav.is-active .b-mobile-nav__inner {
   transform: translateX(0px); }

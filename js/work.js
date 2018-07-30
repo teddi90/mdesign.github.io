@@ -12,8 +12,12 @@ jQuery(document).ready(function($) {
 		event.stopPropagation();
 	});
 	$('.menu-item > a ').click(function(){
-		$(this).toggleClass('is-active');
-		$('.b-mobile-nav').addClass('is-active');
+		$(this).removeClass('is-active');
+		$('.b-mobile-nav').removeClass('is-active');
+	});
+
+	$('.b-mobile-close ').click(function(){
+		$('.b-mobile-nav').removeClass('is-active');
 	});
 
 	var wrap = $('.navigation');
@@ -90,7 +94,7 @@ jQuery(document).ready(function($) {
         var id  = $(this).attr('href'),
         //узнаем высоту от начала страницы до блока на который ссылается якорь
 
-            top = $(id).offset().top -52;
+            top = $(id).offset().top -51;
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').stop().animate({scrollTop: top}, 1500);
