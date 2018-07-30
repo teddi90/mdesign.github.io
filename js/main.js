@@ -12,8 +12,8 @@ jQuery(document).ready(function($) {
 		event.stopPropagation();
 	});
 	$('.menu-item > a ').click(function(){
-		$(this).toggleClass('is-active');
-		$('.b-mobile-nav').addClass('is-active');
+		$(this).removeClass('is-active');
+		$('.b-mobile-nav').removeClass('is-active');
 	});
 
 	var wrap = $('.navigation');
@@ -113,7 +113,8 @@ jQuery(document).ready(function($) {
 	$('.slider-what__work').slick({
 	  dots: false,
 	  infinite: true,
-	  autoplay: false,
+	  autoplay: true,
+	  autoplaySpeed: 4000,
 	  arrows:true,
 	  fade: true,
 	   cssEase: 'linear',

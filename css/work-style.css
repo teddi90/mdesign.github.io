@@ -397,7 +397,7 @@ ul {
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin: 1em;
+  margin: 0 1em;
   max-width: 100%;
   width: calc(100% - 2em);
   vertical-align: top;
@@ -625,6 +625,12 @@ ul {
     display: none; }
   #examples {
     margin-top: 52px; }
+  #works {
+    padding-bottom: 30px; }
+    #works p {
+      font-size: 18px; }
+    #works img {
+      filter: grayscale(0%); }
   .order {
     margin-bottom: 25px; }
     .order h3 {
@@ -634,20 +640,19 @@ ul {
       padding: 5px 20px; }
   #contact {
     padding-bottom: 30px; }
+    #contact h2 {
+      margin-bottom: 5px; }
     #contact i {
-      margin-bottom: 15px;
-      font-size: 34px; }
+      margin-top: 20px;
+      margin-bottom: 15px; }
     #contact h3 {
-      margin-bottom: 15px;
-      font-size: 16px; }
+      font-size: 18px; }
     #contact a {
-      font-size: 16px; }
+      font-size: 18px; }
     #contact .conatct__social {
-      margin-top: 23px; }
+      margin-top: 0px; }
       #contact .conatct__social a:not(:last-of-type) {
-        margin-right: 25px; }
-      #contact .conatct__social a i {
-        font-size: 25px; }
+        margin-right: 35px; }
   .btn-phone {
     right: 5px;
     bottom: 5px;
@@ -696,6 +701,12 @@ ul {
       width: 190px; }
   .header__phone a {
     font-size: 17px; }
+  #works {
+    padding-bottom: 30px; }
+    #works p {
+      font-size: 18px; }
+    #works img {
+      filter: grayscale(0%); }
   #second-nav {
     display: none; }
   #examples {
