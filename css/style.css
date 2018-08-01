@@ -243,7 +243,7 @@ ul {
 .btn-phone {
   position: fixed;
   display: none;
-  z-index: 99;
+  z-index: 100;
   right: 20px;
   bottom: 20px;
   text-align: center;
@@ -269,7 +269,7 @@ ul {
 .btn-up {
   position: fixed;
   display: none;
-  z-index: 99;
+  z-index: 100;
   left: 20px;
   bottom: 20px;
   text-align: center;
@@ -433,7 +433,7 @@ ul {
     color: #000; }
   #portfolio p {
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 30px; }
   #portfolio img {
     margin-bottom: 10px;
@@ -563,7 +563,7 @@ ul {
     display: none; }
   .slider-what__work .slick-prev {
     left: 15px;
-    z-index: 999; }
+    z-index: 99; }
 
 #how-work {
   background: url("../images/work1.jpg") center center no-repeat;
@@ -749,12 +749,12 @@ ul {
     color: #999; }
   #contact i {
     color: #fff;
-    font-size: 48px;
+    font-size: 32px;
     display: block;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 15px; }
   #contact .conatct__social {
-    margin-top: 42px; }
+    margin-top: 27px; }
     #contact .conatct__social a {
       display: inline-block;
       font-weight: normal; }
@@ -922,6 +922,8 @@ ul {
     .btn-up i {
       font-size: 25px;
       line-height: 45px; }
+  .modal-title h3 {
+    padding: 5px 30px 0; }
   .modal-footer .btn {
     font-size: 18px;
     padding: 5px 25px; } }
