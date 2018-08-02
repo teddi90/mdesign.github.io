@@ -899,6 +899,9 @@ ul {
     #what-work h3 {
       font-size: 23px;
       margin-bottom: 20px; }
+    #what-work h5 {
+      margin-bottom: 15px;
+      margin-top: 0; }
   .slider-what__work {
     margin-bottom: 15px; }
   #how-work h2 {
@@ -1013,6 +1016,9 @@ ul {
     margin-bottom: 25px; }
     #how-work figure img {
       height: 100px; }
+  #how-work h5 {
+    margin-bottom: 15px;
+    margin-top: 0; }
   .slider-what__work {
     margin-bottom: 15px; }
   .order {
