@@ -534,7 +534,7 @@ ul {
       font-size: 18px; }
 
 #what-work {
-  margin-bottom: 60px; }
+  margin-bottom: 45px; }
   #what-work h2 {
     margin-bottom: 30px; }
   #what-work p {
@@ -542,7 +542,7 @@ ul {
     margin-bottom: 20px; }
   #what-work h3 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; }
   #what-work h4 {
@@ -551,7 +551,7 @@ ul {
     font-family: 'Montserrat', sans-serif; }
   #what-work h5 {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-size: 19px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -572,7 +572,7 @@ ul {
     flex: 1 100%;
     flex-wrap: wrap; }
   .slider-what__work .slick-slide {
-    height: 40%; }
+    height: 60%; }
   .slider-what__work .slick-next {
     right: 15px; }
   .slider-what__work .slick-prev, .slider-what__work .slick-next {
@@ -898,12 +898,14 @@ ul {
       font-size: 19px; }
     #what-work h3 {
       font-size: 23px;
-      margin-bottom: 20px; }
+      margin-bottom: 0; }
     #what-work h5 {
       margin-bottom: 15px;
       margin-top: 0; }
   .slider-what__work {
     margin-bottom: 15px; }
+  .slider-what__work .slick-slide {
+    height: 50%; }
   #how-work h2 {
     margin-top: 20px; }
   #how-work figure {
@@ -1008,7 +1010,7 @@ ul {
       font-size: 19px; }
     #what-work h3 {
       font-size: 23px;
-      margin-bottom: 20px; }
+      margin-bottom: 0px; }
   #how-work h2 {
     margin-top: 20px;
     margin-bottom: 35px; }
@@ -1057,6 +1059,8 @@ ul {
     .btn-up i {
       font-size: 25px;
       line-height: 45px; }
+  .slider-what__work .slick-slide {
+    height: 50%; }
   #how-work .col-md-6:nth-child(even) .steps__circle {
     position: relative; }
     #how-work .col-md-6:nth-child(even) .steps__circle:after {
@@ -1115,6 +1119,8 @@ ul {
     margin-bottom: 10px; }
     #what-work h2 {
       margin-bottom: 25px; }
+  .slider-what__work .slick-slide {
+    height: 50%; }
   #how-work h2 {
     margin-top: 20px;
     margin-bottom: 35px; }
