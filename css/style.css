@@ -462,6 +462,7 @@ ul {
   #portfolio a:hover figcaption {
     opacity: 1; }
   #portfolio .btn {
+    margin-top: 15px;
     display: inline-block; }
     #portfolio .btn:hover {
       color: #fff; }
