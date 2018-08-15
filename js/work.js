@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 		$('.b-mobile-nav').removeClass('is-active');
 	});
 
-	var wrap = $('.navigation');
+	var wrap = $('.navigation-work');
 	$(window).on('scroll', function(e) {
 		if ($(this).scrollTop() > 1439) {
 		      wrap.addClass('navigation__fixed');
