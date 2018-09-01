@@ -1,24 +1,37 @@
 jQuery(document).ready(function($) {
-	$('.js-show-mobile').click(function(){
+	
+	// mobile menu
+
+	$('.hamburger').click(function(){
 		$(this).toggleClass('is-active');
-		$('.b-mobile-nav').addClass('is-active');
+		$('.mobile-nav').toggleClass('is-active');
 	});
 
 	$(document).click( function(event){
-		if( $(event.target).closest(".b-mobile-nav__inner, .js-show-mobile").length)
+		if( $(event.target).closest(".nav-inner, .hamburger").length)
 			return;
-		$('.b-mobile-nav').removeClass('is-active');
-		$('.b-hamburger').removeClass('is-active');
+		$('.mobile-nav').removeClass('is-active');
+		$('.hamburger').removeClass('is-active');
 		event.stopPropagation();
 	});
-	$('.menu-item > a ').click(function(){
-		$(this).removeClass('is-active');
-		$('.b-mobile-nav').removeClass('is-active');
+
+	 $('.menu-item > a ').click(function(){
+		$('.mobile-nav').removeClass('is-active');
+		$('.hamburger').removeClass('is-active');
 	});
 
 	$('.b-mobile-close ').click(function(){
-		$('.b-mobile-nav').removeClass('is-active');
+		$('.mobile-nav').removeClass('is-active');
+		$('.hamburger').removeClass('is-active');
 	});
+
+	// $(".mobile-nav").swipe( {
+	// 	swipeLeft:function() {
+	// 		$('.hamburger').removeClass('is-active');
+	// 		$(".mobile-nav").removeClass('is-active');
+	// 	},
+	// 	threshold:50
+	// });
 
 	var wrap = $('.navigation-work');
 	$(window).on('scroll', function(e) {
@@ -28,6 +41,26 @@ jQuery(document).ready(function($) {
 		      wrap.removeClass('navigation__fixed');
 		    }
 	});
+
+	$('.input__field').each(function() {
+        var $parentSpan = $(this).parent('span');
+        if ($(this).val().trim() !== "") {
+            $parentSpan.addClass('input--filled');
+        } else {
+            $parentSpan.removeClass('input--filled');
+        }
+    });
+    $('.input__field').focusout(function(event) {
+        var $parentSpan = $(this).parent('span');
+        if ($(this).val().trim() !== "") {
+            $parentSpan.addClass('input--filled');
+            $parentSpan.removeClass('input--hoshi-error');
+        } else {
+            $parentSpan.removeClass('input--filled');
+        }
+    });
+
+    $('#input-tell, #modal__input-tell').mask('(000) 000-00-00'); //maska input
 
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',

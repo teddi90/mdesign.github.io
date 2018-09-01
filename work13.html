@@ -18,6 +18,7 @@
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
   </head>
   <body>
     <nav class="navigation-work">
@@ -28,23 +29,22 @@
         <li><a href="#contact">контакти</a></li>
       </ul>
     </nav>
-    <div class="b-mobile-nav">
-      <div class="b-mobile-nav__inner">
-        <div class="b-mobile-close"><i class="fas fa-times"></i></div>
-        <div class="b-mobile-nav__item">
-          <ul class="mobile-menu" id="menu-holovne-meniu-1">
-            <li class="menu-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
-            <li class="menu-item"><a href="#portfolio">портфоліо</a></li>
+    <div class="mobile-nav">
+      <div class="nav-inner">
+        <div class="nav-item">
+          <ul class="mobile-menu">
+            <li class="menu-item"><a href="index.html">на домашню</a></li>
+            <li class="menu-item"><a href="#works">інші роботи</a></li>
             <li class="menu-item"><a href="#works">інші роботи</a></li>
             <li class="menu-item"><a href="#contact">контакти 	</a></li>
           </ul>
         </div>
-        <div class="b-mobile-nav__item">
+        <div class="nav-item">
           <ul class="mobile-menu">
-            <li class="menu-item"><a href="tel:+380677721010">067 772 1010	</a></li>
+            <li><a href="tel:+380677721010">067 772 1010	</a></li>
           </ul>
         </div>
-        <div class="b-mobile-nav__item"><a class="btn-order" href="#" data-toggle="modal" data-target="#orderCall">Замовити дзвінок</a></div>
+        <div class="nav-item"><a class="btn-order" href="#" data-toggle="modal" data-target="#orderCall">Замовити дзвінок</a></div>
       </div>
     </div>
     <header id="home">
@@ -54,7 +54,7 @@
             <div class="col-6 col-sm-6 col-md-9 col-lg-7">
               <div class="header__logo scroll"><a href="#home"><img src="images/logo.png" alt="MDesign"/></a></div>
               <div class="header__slogan d-none d-md-block">
-                <h3>Перетворимо Ваші мрії<br/> в простір для життя		</h3>
+                <h3>Перетворюємо Ваші мрії<br/> в простір для життя		</h3>
               </div>
             </div>
             <div class="col-md-4 col-lg-3 d-none d-lg-block">
@@ -63,8 +63,12 @@
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 d-none d-lg-block">
               <div class="header__phone"><a href="tel:+380677721010">067 772 1010</a></div>
             </div>
+            <div class="hamburger hamburger--3dx d-lg-none">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
           </div>
-          <div class="hamburger d-lg-none"><span class="trigger-holder js-show-mobile"><span class="menu-trigger"></span></span></div>
         </div>
       </div>
     </header>
@@ -204,7 +208,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 ta-c">
-            <h2>замовте дзвінок</h2>
+            <h2>замовити дзвінок</h2>
           </div>
           <div class="col-12 ta-c">
             <h3>Залиште свої дані і ми Вам зателефонуємо	</h3>
@@ -219,7 +223,7 @@
                 <input class="input__field input__field--yoko" id="input-tell" type="tel" name="tell"/>
                 <label class="input__label input__label--yoko" for="input-tell"><span class="input__label-content input__label-content--yoko">Телефон</span></label></span></div>
             <div class="col-12 ta-c">
-              <button class="btn" type="submit">Замовити дзвінок</button>
+              <button class="btn" type="submit">відправити</button>
             </div>
           </div>
         </form>
@@ -232,7 +236,7 @@
             <h2>Контакти</h2>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 ta-c"><i class="fas fa-map-marker-alt"></i>
-            <h3>м.Івано-Франківськ вул.Незалежності 26</h3>
+            <h3>м.Івано-Франківськ</h3>
           </div>
           <div class="col-12 col-sm-6 col-lg-3 ta-c"><i class="fas fa-mobile-alt"></i><a href="tel:+380677721010">067 772 1010</a></div>
           <div class="col-12 col-sm-6 col-lg-3 ta-c"><i class="fas fa-envelope"></i><a href="mailto:mdesign@gmail.com">mdesignstudio@i.ua</a></div>
@@ -264,7 +268,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button class="btn" type="submit">Замовити дзвінок</button>
+            <button class="btn" type="submit">відправити</button>
           </div>
         </div>
       </div>
