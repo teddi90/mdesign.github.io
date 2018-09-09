@@ -263,7 +263,7 @@ ul {
     width: 250px; }
 
 .header__slogan {
-  transform: translateY(12px);
+  transform: translateY(9px);
   display: inline-block;
   color: #fff;
   font-family: 'Montserrat', sans-serif; }
@@ -274,7 +274,7 @@ ul {
 
 .header__order {
   text-align: right;
-  margin-top: 17px; }
+  margin-top: 14px; }
   .header__order .btn-order {
     border: 2px solid #fff;
     color: #fff;
@@ -848,7 +848,7 @@ ul {
     .header__logo img {
       width: 210px; }
   .header__slogan {
-    transform: translateY(5px); }
+    transform: translateY(2px); }
     .header__slogan h3 {
       font-size: 13px; }
   section {
@@ -892,9 +892,9 @@ ul {
   .d-md-block {
     display: inline-block !important; }
   .header__top {
-    padding: 0 0 5px 0; }
+    padding: 0 0 6px 0; }
   .header__phone {
-    transform: translateY(16px); }
+    transform: translateY(12px); }
     .header__phone a {
       font-size: 20px; }
   .menu li a {
@@ -921,7 +921,7 @@ ul {
   .header__top {
     padding: 5px 0 10px; }
   .header__phone {
-    transform: translateY(15px); }
+    transform: translateY(11px); }
     .header__phone a {
       font-size: 21px; }
   .menu li a {
