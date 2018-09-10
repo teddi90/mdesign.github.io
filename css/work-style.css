@@ -260,7 +260,7 @@ ul {
   vertical-align: top;
   margin-right: 10px; }
   .header__logo img {
-    width: 250px; }
+    width: 158px; }
 
 .header__slogan {
   transform: translateY(9px);
@@ -687,10 +687,10 @@ ul {
   .header {
     margin-top: 52px; }
   .header__logo {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     transform: translateY(1px); }
     .header__logo img {
-      width: 190px; }
+      width: 129px; }
   .header__phone a {
     font-size: 17px; }
   .btn {
@@ -780,7 +780,7 @@ ul {
     margin-bottom: 3px;
     transform: translateY(1px); }
     .header__logo img {
-      width: 190px; }
+      width: 129px; }
   .header__phone a {
     font-size: 17px; }
   #works {
@@ -846,7 +846,7 @@ ul {
     margin-bottom: 0px;
     transform: translateY(1px); }
     .header__logo img {
-      width: 210px; }
+      width: 129px; }
   .header__slogan {
     transform: translateY(2px); }
     .header__slogan h3 {
@@ -892,7 +892,7 @@ ul {
   .d-md-block {
     display: inline-block !important; }
   .header__top {
-    padding: 0 0 6px 0; }
+    padding: 1px 0 7px 0; }
   .header__phone {
     transform: translateY(12px); }
     .header__phone a {
@@ -919,7 +919,7 @@ ul {
   .d-lg-block {
     display: inline-block !important; }
   .header__top {
-    padding: 5px 0 10px; }
+    padding: 5px 0 11px; }
   .header__phone {
     transform: translateY(11px); }
     .header__phone a {
