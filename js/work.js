@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
         var id  = $(this).attr('href'),
         //узнаем высоту от начала страницы до блока на который ссылается якорь
 
-            top = $(id).offset().top -51;
+            top = $(id).offset().top -49;
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').stop().animate({scrollTop: top}, 1500);
