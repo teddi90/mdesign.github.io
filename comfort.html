@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Вітальня приватний будинок</title>
+    <title>Comfort</title>
     <link rel="icon" href="images/favicon.png" type="images/png"/>
     <link rel="stylesheet" href="css/stylesheet.css"/>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
@@ -14,28 +14,23 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css"/>
     <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/work-style.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/slick.min.js"></script>
   </head>
   <body>
-    <nav class="navigation-work">
-      <ul class="menu clearfix">
-        <li><a href="index.html">на домашню</a></li>
-        <li><a href="#works">інші роботи</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#orderCall">замовити дзвінок</a></li>
-        <li><a href="#contact">контакти</a></li>
-      </ul>
-    </nav>
     <div class="mobile-nav">
       <div class="nav-inner">
         <div class="nav-item">
           <ul class="mobile-menu">
             <li class="menu-item"><a href="index.html">на домашню</a></li>
-            <li class="menu-item"><a href="#works">інші роботи</a></li>
+            <li class="menu-item"><a href="#other-services">інші пакети послуг</a></li>
             <li class="menu-item"><a href="#contact">контакти 	</a></li>
           </ul>
         </div>
@@ -74,118 +69,67 @@
     </header>
     <div class="btn-phone"><a href="#" data-toggle="modal" data-target="#orderCall"><i class="fas fa-phone"></i></a></div>
     <div class="btn-up scroll"><a href="#home"><i class="fas fa-arrow-up"></i></a></div>
-    <section id="examples">
+    <section id="service">
       <div class="container">
         <div class="row ta-c">
           <div class="col-12">
-            <h2>Вітальня приватний будинок</h2>
+            <h2>Пакет COMFORT</h2>
+            <h3>від 17$/м2</h3>
           </div>
-          <div class="col-md-6">
-            <div class="examples-item"><img class="img-fluid" src="images/works/work4/thumbnail-1.jpg" alt=""/><a class="fancybox-thumb examples-item__zoom" rel="fancybox-thumb" href="images/works/work4/1.jpg" title="Вітальня приватний будинок"><i class="fas fa-search"></i></a></div>
+          <div class="col-lg-7 col-xl-6">
+            <div class="service-slider">
+              <div class="slider-item"><img class="img-fluid" src="images/service1.jpg" alt=""/></div>
+              <div class="slider-item"><img class="img-fluid" src="images/service2.jpg" alt=""/></div>
+              <div class="slider-item"><img class="img-fluid" src="images/service3.jpg" alt=""/></div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="examples-item"><img class="img-fluid" src="images/works/work4/thumbnail-2.jpg" alt=""/><a class="fancybox-thumb examples-item__zoom" rel="fancybox-thumb" href="images/works/work4/2.jpg" title="Вітальня приватний будинок"><i class="fas fa-search"></i></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="examples-item"><img class="img-fluid" src="images/works/work4/thumbnail-3.jpg" alt=""/><a class="fancybox-thumb examples-item__zoom" rel="fancybox-thumb" href="images/works/work4/3.jpg" title="Вітальня приватний будинок"><i class="fas fa-search"></i></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="examples-item"><img class="img-fluid" src="images/works/work4/thumbnail-4.jpg" alt=""/><a class="fancybox-thumb examples-item__zoom" rel="fancybox-thumb" href="images/works/work4/4.jpg" title="Вітальня приватний будинок"><i class="fas fa-search"></i></a></div>
+          <div class="col-lg-5 col-xl-6">
+            <h4>Складові послуги:</h4>
+            <ul>
+              <li>концептуальне рішення інтер'єру </li>
+              <li>схема розміщення меблів згідно габаритів</li>
+              <li>3D візуалізація</li>
+              <li>планування до і після</li>
+              <li>пакет креслень(розгортки по стінах)</li>
+              <li>пакет креслень(план виводу освітлення)</li>
+              <li>пакет креслень(підлога,стеля)</li>
+              <li>пакет креслень(розміщення батарей)</li>
+              <li>пакет креслень(план розміщення розеток)</li>
+              <li>підбір світильників</li>
+              <li>підбір матеріалів</li>
+              <li>підбір меблів</li>
+              <li>три цикли правок</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <section id="works">
+    <section id="other-services">
       <div class="container">
-        <div class="row">
-          <div class="col-12 ta-c">
-            <h2>інші роботи</h2>
+        <div class="row ta-c">
+          <div class="col-12">
+            <h2>Інші пакети послуг</h2>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work10.html">
-              <figure><img class="img-fluid" src="images/works/work10/thumbnail-10.jpg" alt=""/>
-                <figcaption>
-                  <p>Квартира м.Варшава</p>
+          <div class="col-md-6">
+            <div class="serv-info">
+              <figure><a href="standart.html"><img class="img-fluid" src="images/service1.jpg" alt=""/></a>
+                <figcaption><a href="standart.html">
+                    <h3>Пакет STANDART</h3></a>
+                  <p>від 7$/м2	</p><a class="btn-services" href="standart.html">детальніше</a>
                 </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work11.html">
-              <figure><img class="img-fluid" src="images/works/work11/thumbnail-7.jpg" alt=""/>
-                <figcaption>
-                  <p>Квартира м.Київ</p>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="serv-info">
+              <figure><a href="standart-plus.html"><img class="img-fluid" src="images/service2.jpg" alt=""/></a>
+                <figcaption><a href="standart-plus.html">
+                    <h3>Пакет STANDART+ </h3></a>
+                  <p>від 11$/м2	</p><a class="btn-services" href="standart-plus.html">детальніше</a>
                 </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work12.html">
-              <figure><img class="img-fluid" src="images/works/work12/thumbnail-15.jpg" alt=""/>
-                <figcaption>
-                  <p>Смарт квартира м.Івано-Франківськ</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work13.html">
-              <figure><img class="img-fluid" src="images/works/work13/thumbnail-9.jpg" alt=""/>
-                <figcaption>
-                  <p>Смарт квартира м.Івано-Франківськ</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work14.html">
-              <figure><img class="img-fluid" src="images/works/work14/thumbnail-5.jpg" alt=""/>
-                <figcaption>
-                  <p>Смарт квартира м.Івано-Франківськ</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4"><a href="work15.html">
-              <figure><img class="img-fluid" src="images/works/work15/thumbnail-8.jpg" alt=""/>
-                <figcaption>
-                  <p>Квартира м.Чернівці</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work1.html">
-              <figure><img class="img-fluid" src="images/works/work1/thumbnail-9.jpg" alt=""/>
-                <figcaption>
-                  <p>Ресторан бар</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work2.html">
-              <figure><img class="img-fluid" src="images/works/work2/thumbnail-1.jpg" alt=""/>
-                <figcaption>
-                  <p>3-ох кімнатна квартира м.Івано-Франківськ</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work3.html">
-              <figure><img class="img-fluid" src="images/works/work8/thumbnail-1.jpg" alt=""/>
-                <figcaption>
-                  <p>Бар в ресторані Зосина Воля</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work5.html">
-              <figure><img class="img-fluid" src="images/works/work7/thumbnail-2.jpg" alt=""/>
-                <figcaption>
-                  <p>Салон краси м.Івано-Франківськ</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work6.html">
-              <figure><img class="img-fluid" src="images/works/work5/thumbnail-1.jpg" alt=""/>
-                <figcaption>
-                  <p>Ресторан Лорет де Мар			</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work7.html">
-              <figure><img class="img-fluid" src="images/works/work6/thumbnail-5.jpg" alt=""/>
-                <figcaption>
-                  <p>Ресторан Болгарія</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work4.html">
-              <figure><img class="img-fluid" src="images/works/work3/thumbnail-1.jpg" alt=""/>
-                <figcaption>
-                  <p>Відпочинкова зона м.Одеса				</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-sm-6 col-md-6 col-lg-4 hidden"><a href="work9.html">
-              <figure><img class="img-fluid" src="images/works/work9/thumbnail-1.jpg" alt=""/>
-                <figcaption>
-                  <p>Вітальня с.Угринів</p>
-                </figcaption>
-              </figure></a></div>
-          <div class="col-12 ta-c"><a class="btn btn-more" href="#">Показати більше робіт</a></div>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>

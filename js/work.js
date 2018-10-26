@@ -148,6 +148,17 @@ jQuery(document).ready(function($) {
 		 }
 	});
 
+	$('.service-slider').slick({
+	  dots: false,
+	  infinite: true,
+	  autoplay: true,
+	  autoplaySpeed: 4000,
+	  arrows:true,
+	  fade: true,
+	   cssEase: 'linear',
+	  nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i><div>',
+  	  prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i><div>'
+	}); 
 	
 }) 
 

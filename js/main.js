@@ -59,12 +59,7 @@ jQuery(document).ready(function($) {
 		      arrow.slideUp().removeClass('btn-up__fixed');
 		    }
 	});
-
-	$('.serv-info').on('click', function(event) {
-	  var parentItem = $(this).parent();
-	  parentItem.find('.serv-info__hidden').stop().slideToggle();
-	 });
-	
+		
     $(".menu, .scroll").on("click","a", function (event) {
 
         //отменяем стандартную обработку нажатия по ссылке

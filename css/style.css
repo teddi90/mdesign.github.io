@@ -558,17 +558,13 @@ ul {
     margin-bottom: 10px;
     filter: grayscale(100%);
     transition: filter .5s; }
-  #services .serv-info {
-    cursor: pointer; }
   #services .serv-info:hover img {
     filter: grayscale(0%); }
-  #services .serv-info:hover .btn-services {
-    background-color: #000;
-    color: #fff; }
-  #services h3 {
+  #services a h3 {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #000; }
   #services figcaption {
     text-align: center; }
 
@@ -584,18 +580,6 @@ ul {
 .btn-services:hover {
   background-color: #000;
   color: #fff; }
-
-.serv-info__hidden {
-  display: none; }
-  .serv-info__hidden h4 {
-    font-size: 18px; }
-  .serv-info__hidden ul {
-    list-style-type: square;
-    text-align: left;
-    margin-left: 30px;
-    margin-bottom: 20px; }
-    .serv-info__hidden ul li {
-      font-size: 18px; }
 
 #what-work {
   margin-bottom: 45px; }
