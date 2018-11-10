@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
         var id  = $(this).attr('href'),
         //узнаем высоту от начала страницы до блока на который ссылается якорь
 
-            top = $(id).offset().top -49;
+            top = $(id).offset().top -50;
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').stop().animate({scrollTop: top}, 1500);
@@ -148,17 +148,6 @@ jQuery(document).ready(function($) {
 		 }
 	});
 
-	$('.service-slider').slick({
-	  dots: false,
-	  infinite: true,
-	  autoplay: true,
-	  autoplaySpeed: 4000,
-	  arrows:true,
-	  fade: true,
-	   cssEase: 'linear',
-	  nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i><div>',
-  	  prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i><div>'
-	}); 
 	
 }) 
 

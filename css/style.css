@@ -250,7 +250,6 @@ ul {
 
 .header__top {
   background-color: #101514;
-  border-bottom: 2px solid #fff;
   padding: 5px 0 3px;
   position: relative; }
 
@@ -419,6 +418,17 @@ ul {
   #slider .slick-dots li.slick-active button:before {
     background-color: #fff;
     opacity: 1; }
+
+.header__title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .header__title h1 {
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0px 20px; }
 
 .header__social {
   position: absolute;
@@ -937,7 +947,7 @@ ul {
     top: 0;
     left: 0; }
   .header {
-    margin-top: 52px; }
+    margin-top: 51px; }
   .header__logo {
     margin-bottom: 4px;
     transform: translateY(1px); }
@@ -945,6 +955,10 @@ ul {
       width: 129px; }
   .header__phone a {
     font-size: 17px; }
+  .header__title {
+    top: 36%; }
+    .header__title h1 {
+      font-size: 42px; }
   #slider .slick-prev {
     left: 20px; }
   #slider .slick-next {
@@ -1059,7 +1073,7 @@ ul {
     top: 0;
     left: 0; }
   .header {
-    margin-top: 52px; }
+    margin-top: 50px; }
   .btn {
     font-size: 18px; }
   .btn-more {
@@ -1071,6 +1085,8 @@ ul {
       width: 129px; }
   .header__phone a {
     font-size: 17px; }
+  .header__title {
+    top: 38%; }
   #second-nav {
     display: none; }
   #about h2 {
@@ -1187,15 +1203,16 @@ ul {
   h2 {
     margin-bottom: 30px; }
   .header__top {
-    padding-bottom: 8px; }
-  .header__top {
+    padding-bottom: 8px;
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
     left: 0; }
   .header {
-    margin-top: 60px; }
+    margin-top: 52px; }
+  .header__title {
+    top: 40%; }
   .navigation__fixed {
     display: none; }
   #second-nav {
@@ -1255,6 +1272,8 @@ ul {
     transform: translateY(12px); }
     .header__phone a {
       font-size: 20px; }
+  .header__title {
+    top: 42%; }
   #about h2 {
     padding-top: 40px; }
   .menu li a {
@@ -1306,6 +1325,8 @@ ul {
     transform: translateY(11px); }
     .header__phone a {
       font-size: 21px; }
+  .header__title {
+    top: 45%; }
   .menu li a {
     font-size: 23px;
     padding: 0px; }

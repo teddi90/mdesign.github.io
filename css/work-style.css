@@ -250,7 +250,6 @@ ul {
 
 .header__top {
   background-color: #101514;
-  border-bottom: 2px solid #fff;
   padding: 5px 0 3px;
   position: relative; }
 
@@ -784,6 +783,8 @@ ul {
       font-size: 18px; }
     .order .btn {
       padding: 5px 20px; }
+  .service-img {
+    margin-bottom: 15px; }
   #contact {
     padding-bottom: 30px; }
     #contact h2 {
@@ -872,6 +873,8 @@ ul {
       font-size: 18px; }
     .order .btn {
       padding: 5px 20px; }
+  .service-img {
+    margin-bottom: 20px; }
   #contact {
     padding-bottom: 30px; }
     #contact i {
@@ -949,7 +952,7 @@ ul {
     bottom: 10px; }
   #service {
     padding: 70px 0 0 0; }
-  .service-slider {
+  .service-img {
     margin-bottom: 20px; }
   #examples {
     margin-top: 60px; }
