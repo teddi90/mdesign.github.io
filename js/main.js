@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 
 	var wrap = $('.navigation');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1439) {
+		if ($(this).scrollTop() > 1448) {
 		      wrap.addClass('navigation__fixed');
 		    } else {
 		      wrap.removeClass('navigation__fixed');
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 	
 	var phone = $('.btn-phone');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1439) {
+		if ($(this).scrollTop() > 1448) {
 		      phone.slideDown().addClass('btn-phone__fixed');
 		    } else {
 		      phone.slideUp().removeClass('btn-phone__fixed');
@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
 
 	var arrow = $('.btn-up');
 	$(window).on('scroll', function(e) {
-		if ($(this).scrollTop() > 1439) {
+		if ($(this).scrollTop() > 1448) {
 		      arrow.slideDown().addClass('btn-up__fixed');
 		    } else {
 		      arrow.slideUp().removeClass('btn-up__fixed');
