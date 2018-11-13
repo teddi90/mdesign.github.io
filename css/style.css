@@ -421,9 +421,7 @@ ul {
 
 .header__title {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%); }
+  left: 11%; }
   .header__title h1 {
     font-size: 60px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -956,7 +954,9 @@ ul {
   .header__phone a {
     font-size: 17px; }
   .header__title {
-    top: 36%; }
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%); }
     .header__title h1 {
       font-size: 42px; }
   #slider .slick-prev {
@@ -1086,7 +1086,11 @@ ul {
   .header__phone a {
     font-size: 17px; }
   .header__title {
-    top: 38%; }
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .header__title h1 {
+      font-size: 47px; }
   #second-nav {
     display: none; }
   #about h2 {
@@ -1212,7 +1216,9 @@ ul {
   .header {
     margin-top: 52px; }
   .header__title {
-    top: 40%; }
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%); }
   .navigation__fixed {
     display: none; }
   #second-nav {
@@ -1273,7 +1279,7 @@ ul {
     .header__phone a {
       font-size: 20px; }
   .header__title {
-    top: 42%; }
+    bottom: 21%; }
   #about h2 {
     padding-top: 40px; }
   .menu li a {
@@ -1326,7 +1332,7 @@ ul {
     .header__phone a {
       font-size: 21px; }
   .header__title {
-    top: 45%; }
+    bottom: 21%; }
   .menu li a {
     font-size: 23px;
     padding: 0px; }
